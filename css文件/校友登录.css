@@ -1,0 +1,130 @@
+/*导航栏*/
+ul{ list-style:none;}
+a{color:#333;text-decoration:none}
+.nav li{float:left;}
+.nav li a{
+    display:block;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+    width:100px;
+    /*background-color: orangered;*/
+    font-weight: bold;
+}
+.nav li a:hover{
+    background-color: gray;
+    /*color: #ff4500*/
+}
+body{margin:0}
+.head{
+    /*margin: 200px;*/
+    border: 50px black;
+    padding: 5px;
+    /*background-color: orangered;*/
+}
+#navigation{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#logo_right{
+    float:right;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.from {
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+.bgc {
+    height:100%;
+}
+#bg{
+    background-image: url("../图片/logo.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.submit {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 150px;
+    width: 500px;
+    height: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    /*color: #fff;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.form_title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.form_input {
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20px;
+}
+
+.inputs {
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    color: black;
+    padding-left: 20px;
+}
+
+.form_input span {
+    width: 85px;
+    align-self: center;
+    color: black;
+}
+
+.btn_submit {
+    align-self: center;
+}
+
+.btn {
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    background: #999;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    background: black;
+}
+
+.back {
+    margin-left: 10px;
+}
+
+.home_href {
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    background: blue;
+}

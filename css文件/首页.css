@@ -1,0 +1,118 @@
+#date{
+    text-align: center;
+    color: floralwhite;
+    /*background-color: #999999;*/
+}
+/*导航栏*/
+ul{ list-style:none;}
+a{color:#333;text-decoration:none}
+.nav li{float:left;}
+.nav li a{
+    display:block;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+    width:100px;
+    /*background-color: orangered;*/
+    font-weight: bold;
+}
+.nav li a:hover{
+    background-color: gray;
+    color: #ff4500
+}
+body{margin:0}
+.head{
+    /*margin: 200px;*/
+    border: 50px black;
+    padding: 5px;
+    background-image: url("../图片/头部背景.png");
+}
+#navigation{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0;
+    /*background-color: #d6f7ff;*/
+}
+#logo_right{
+    float:right;
+}
+
+/*图片轮播*/
+#img{
+    height: 550px;
+}
+#img img{
+    width: 100%;
+    position: absolute;          /*让所有图片显示在一个位置，设置绝对位置*/
+    opacity: 0;
+    animation: Aimg 12s infinite;      /*设置图片轮播一次时间，以及轮播方式（无限循环）*/
+}
+@keyframes Aimg{
+    0% {                  /*在百分之零时图片完全不可见*/
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0.3;
+    }
+    2% {
+        opacity: 0.5;
+    }
+    3% {
+        opacity: 0.8;
+    }
+    4% {                 /*设置这些尽量让图片切换时更加流畅，不突兀*/
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+
+    25% {               /*在此时本张图片显示结束，不透明度设置为0*/
+        opacity: 0;
+    }
+}
+#img img:nth-child(0){animation-delay: 0s;}/*设置下一个子元素延迟时间*/
+#img img:nth-child(1){animation-delay: 3s;}
+#img img:nth-child(2){animation-delay: 6s;}
+#img img:nth-child(3){animation-delay: 9s;}
+
+/*华水介绍*/
+.introduce {
+    display: flex;
+    flex-direction: column;
+}
+.introduce_item {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.introduce_item_end {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-image: url("../图片/背景.png");
+}
+.introduce_item_img {
+    width: 800px;
+    height: 500px;
+}
+.introduce_item_text {
+    width: 400px;
+    font-size: 18px;
+    line-height: 36px;
+    align-self: center;
+    text-align: center;
+    padding-left: 100px;
+}
+.introduce_item_text_end {
+    width: 800px;
+    height: 400px;
+    font-size: 18px;
+    line-height: 36px;
+    align-self: center;
+    text-align: center;
+    padding-left: 100px;
+}

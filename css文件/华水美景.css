@@ -1,0 +1,134 @@
+/*导航栏*/
+ul{ list-style:none;}
+a{color:#333;text-decoration:none}
+.nav li{float:left;}
+.nav li a{
+    display:block;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+    width:100px;
+    /*background-color: orangered;*/
+    font-weight: bold;
+}
+.nav li a:hover{
+    background-color: gray;
+    color: #ff4500
+}
+body{margin:0}
+.head{
+    /*margin: 200px;*/
+    border: 50px black;
+    padding: 5px;
+    background-image: url("../图片/头部背景.png");
+}
+#navigation{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0;
+    /*background-color: #d6f7ff;*/
+}
+.logo_right{
+    float:right;
+}
+.logo_center{
+    float: top;
+}
+
+/*照片墙*/
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    /*background-color: #eee;*/
+    background-image: url("../图片/背景.png");
+}
+
+.container{
+    width: 960px;
+    height: 650px;
+    margin:60px auto;
+    position: relative;
+
+}
+.pic{
+    width: 360px;
+}
+.container img{
+    padding: 10px 10px 15px;
+    background: #fff;
+    border:1px solid #ddd;
+    box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    position: absolute;
+}
+.container img:hover{
+    cursor: pointer;
+    box-shadow: 15px 15px 20px rgba(50,50,50,0.4);
+    transform: rotate(0deg) scale(1.20);
+    -webkit-transform: rotate(0deg) scale(1.20);
+    z-index: 2;
+}
+.pic1{
+    left:0px;
+    top:0;
+    transform: rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+}
+.pic2{
+    left:160px;
+    top:0;
+    transform: rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+}
+.pic3{
+    left:320px;
+    top:0;
+    transform: rotate(5deg);
+    -webkit-transform:rotate(5deg);
+}
+.pic4{
+    top:0px;
+    left:480px;
+    transform: rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+.pic5{
+    top:0px;
+    left:640px;
+    transform: rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+.pic6{
+    top:300px;
+    left:0;
+    transform: rotate(10deg);
+    -webkit-transform:rotate(10deg);
+}
+.pic7{
+    top:300px;
+    left:200px;
+    transform: rotate(20deg);
+    -webkit-transform:rotate(20deg);
+}
+.pic8{
+    top:300px;
+    left:400px;
+    transform: rotate(5deg);
+    -webkit-transform:rotate(5deg);
+}
+.pic9{
+    top:300px;
+    left:600px;
+    transform: rotate(15deg);
+    -webkit-transform:rotate(15deg);
+}
+
